@@ -1,7 +1,7 @@
 ---
 title: "Large Data Processing at the Command Line"
 output: 
-  html_document:
+  github_document:
     highlight: pygments
 ---
 
