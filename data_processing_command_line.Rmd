@@ -32,7 +32,7 @@ system.time(
   )
 
 ##  user  system elapsed 
-## 23.75    0.23   24.08
+## 56.75    0.23   24.08
 
 system.time(
   comp <- read.table('large-compressed.txt.gz', sep = ',')
