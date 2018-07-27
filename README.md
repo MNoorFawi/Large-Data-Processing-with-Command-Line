@@ -1,7 +1,8 @@
 ---
 title: "Large Data Processing at the Command Line"
 output: 
-  github_document
+  html_document:
+    highlight: pygments
 ---
 
 ```{r setup, include=FALSE}
