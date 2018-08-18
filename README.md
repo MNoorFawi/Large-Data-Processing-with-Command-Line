@@ -1,7 +1,7 @@
 Large Data Processing at the Command Line
 ================
 
-[Processing Large Data using compression, data.table and the command line](https://github.com/MNoorFawi/Large-Data-Processing-with-Command-Line)
+[Processing Large Data using compression, data.table and the command line](https://github.com/MNoorFawi)
 ========================================================================
 
 ### here we are going to see different ways for processing big data using R and command line
