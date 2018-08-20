@@ -19,3 +19,4 @@ awk -F, '($7 >= 2) && ($5 > 1)' > smaller_file.csv
 < large-compressed.txt.gz cat | gzip -d |
 csvcut -c 7,8,9,10 |  header -a g,h,i,j |
 csvsql --query 'SELECT SUM(g) AS sum_a, AVG(h) AS mean_h, MIN(i) AS min_i, MAX(j) AS max_j FROM stdin'
+
