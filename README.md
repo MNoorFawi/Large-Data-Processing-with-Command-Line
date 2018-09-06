@@ -106,7 +106,7 @@ system.time(
 
 #### using the command line
 
-``` bash
+``` r
 time < large-compressed.txt.gz cat | 
 gzip -d | grep -v '-' > output.txt
 
@@ -117,7 +117,7 @@ gzip -d | grep -v '-' > output.txt
 
 #### now it's time to explore more tools and to see what else we can do with the command line
 
-``` bash
+``` r
 # here we read the zipped file then we exclude any negative value then we choose only the rows where columns 7 is greater than or equal to 2 and column 5 is greater than 1 then we get the number of rows
 
 < large-compressed.txt.gz cat | gzip -d |
@@ -150,7 +150,7 @@ header -a a,b,c,d | head | csvlook
 | 0.922  | -0.570 | -1.287 | -1.327 |
 | 1.069  | -1.227 | 1.076  | -0.296 |
 
-``` bash
+``` r
 # we can also write the output to a file then read it with R and do our analysis on it being much smaller
 < large-compressed.txt.gz cat | gzip -d |
 grep -v '-' |
