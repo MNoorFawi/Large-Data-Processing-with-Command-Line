@@ -26,14 +26,14 @@ system.time(
   )
 
 ##  user  system elapsed 
-## 56.75    0.23   24.08
+## 17.23    0.30   17.64
 
 system.time(
   comp <- read.table('large-compressed.txt.gz', sep = ',')
 )
 
 ##  user  system elapsed 
-## 27.36    0.10   27.61 
+## 9.34    0.03   9.44 
 ```
 
 a big difference in time need to execute both reading commands
@@ -47,7 +47,7 @@ system.time(
 )
 
 ##    user  system elapsed 
-##   8.36    0.05    8.48 
+##   0.50    0.07    3.47 
 
 system.time(
   fcomp <- fread('< large-compressed.txt.gz gzip -d', sep = ',')
@@ -55,7 +55,7 @@ system.time(
 )
 
 ##    user  system elapsed 
-##   8.39    0.06   10.78 
+##   0.41    0.05   0.12 
 ```
 
 ### there's almost no difference between freading compressed or uncompressed data
